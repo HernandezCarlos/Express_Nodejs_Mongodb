@@ -1,0 +1,29 @@
+<% include ../partials/head %>
+<div class="container">
+ <div class="row p-4">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Agregar Producto</h1>
+                <form action="/agregar-producto" method="post">
+                <div class="form-group">
+                    <label for="producto_categoria">Categoria</label>
+                    <input class="form-control" name="producto_categoria" placeholder="Ingrese Categoria" id="producto_categoria" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="producto_nombre">Nombre</label>
+                    <input class="form-control" name="producto_nombre" placeholder="Ingrese Nombre" id="producto_nombre"  type="text">
+                </div>
+                <div class="form-group">
+                    <label for="producto_precio">Precio</label>
+                    <input class="form-control" name="producto_precio" placeholder="Ingrese Precio" id="producto_precio" type="text">
+                </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+
+<% include ../partials/footer %>
